@@ -10,5 +10,6 @@ var server = http.createServer(function(req,res){
     if(req.url == '/'){
         res.writeHead(200, {'Content-Type: texr/html'});
         res.write('<html><body><p>Welcome to my Node.js Application')
+        res.write('<html><body><p>Welcome John Smit. This is an activity about basics of Node.js</p></body></html>')
     }
 })
