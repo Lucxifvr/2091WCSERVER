@@ -16,18 +16,18 @@ var server = http.createServer(function(req,res){
     else if (req.url == "/about"){
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write('<html><body><p>This is the About Page</p></body></html>')
-        res.write('<html><body><p>Hello John Smith. This activity will teach on how to deal with a simple server and local module in Node.js</p></body></html>')
+        res.write('<html><body><p>Hello John Smith. This activity will teach on how to deal with a simple server and local module in Node.js</p></body></html>');
         res.end();
     }
     else if (req.url == "/contact"){
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write('<html><body><p>This is the Contact Page</p></body></html>')
-        res.write('<html><body><p>John Smith, if you want additional deatails about this activity go to thuse site: https://wwww.tutorialsteacher.com/nodejs/nodejs-tutorials</p></body></html>')
+        res.write('<html><body><p>John Smith, if you want additional deatails about this activity go to thuse site: https://wwww.tutorialsteacher.com/nodejs/nodejs-tutorials</p></body></html>');
         res.end();
     }
     else if (req.url == "/gallery"){
         res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write('<html><body><p>This is the Gallery Page</p></body></html>')
+        res.write('<html><body><p>This is the Gallery Page</p></body></html>');
         res.end();
     }
     else
