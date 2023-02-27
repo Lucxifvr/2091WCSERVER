@@ -34,3 +34,9 @@ app.post('/uploads', upload.single('myFile'), (req, res) => {
 app.get('/file-upload', (req, res) => {
   res.sendFile(__dirname + '/' + 'file-upload.html');
 });
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`Listening on  port ${port}`);
+});
