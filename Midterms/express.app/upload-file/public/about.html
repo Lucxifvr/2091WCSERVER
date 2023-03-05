@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Express App</title>
-    <link rel="stylesheet" href="web.css" />
+    <title>Document</title>
+    <style>
+      body {
+        height: auto;
+        background-color: rgb(
+          159,
+          221,
+          235
+        ); /* For browsers that do not support gradients */
+        background-image: linear-gradient(
+          rgb(156, 136, 136),
+          rgb(186, 153, 233)
+        );
+        background-repeat: no-repeat;
+      }
+
+      .topnav {
+        background-color: #ddf7e3;
+        overflow: hidden;
+      }
+
+      .topnav a {
+        float: right;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #df2e38;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #5d9c59;
+        color: white;
+      }
+
+      h3 {
+        color: rgb(0, 5, 6);
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      h2 {
+        color: rgb(44, 111, 236);
+      }
+    </style>
   </head>
   <body>
-    <h1>WCSERVER</h1>
     <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
+      <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
+      <a class="active" href="about.html">About</a>
       <a href="upload.html">Upload</a>
     </div>
-    <h3>This is the ABOUT PAGE</h3>
+
+    <h1>About Me</h1>
+    <p>
+      <h4>Name: Renz Andrew D. Vitug</h4>
+      <h4>Section: WD - 201</h4>
+
+      Hi There, this page is mine and you've come in the right place to know about me. my name is renz this is 
+      my first basic routing site.
+
+    </p>
   </body>
 </html>
