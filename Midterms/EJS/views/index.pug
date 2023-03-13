@@ -1,11 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title><%=title%></title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-    <h1>Welcome to <%= title %>!</h1>
-</body>
-</html>
+html
+  head
+    title Kiana Joi Malong's Resume
+  body
+    div.container
+      div.row
+        div.col-md-8
+          h1 Kiana Joi Malong
+          h4 Information Technology student | Web Development major
+          hr
+          h2>About Me</h2>
+          p Hi there! My name is Kiana Joi Malong, and I am a student of Information Technology majoring in Web Development. Even though I have no work experience, I am eager to learn and gain experience in the field. I am passionate about coding and web development, and I am looking for opportunities to further my skills and contribute to real-world projects.
+          h2>Education</h2>
+          h4>Bachelor of Science in Information Technology</h4>
+          p>Mabalacat University | Expected Graduation: 2025</p>
+          ul
+            li>Web Development Major</li>
+            li>Dean's List, 2021-2022</li>
+            li>GPA: 3.9/4.0</li>
+          h2>Skills</h2>
+          ul
+            li>HTML5</li>
+            li>CSS3</li>
+            li>JavaScript</li>
+            li>Bootstrap</li>
+            li>Node.js</li>
+            li>MongoDB</li>
+          h2>Contact Information</h2>
+          ul
+            li>Address: 1238 Torquoise St. Goldenland Subdivision Mabalacat Pampanga</li>
+            li>Email: kianajoimalong@email.com</li>
+            li>Phone: 09123456789</li>
+        div.col-md-4
+          img(src='https://via.placeholder.com/150', alt='Kiana Joi Malong')
+          h4>Contact Me</h4>
+          form(action='mailto:kianajoimalong@email.com', method='post', enctype='text/plain')
+            label(for='name') Name:
+            input(type='text', id='name', name='name')
+            br
+            label(for='email') Email:
+            input(type='email', id='email', name='email')
+            br
+            label(for='message') Message:
+            textarea(id='message', name='message')
+            br
+            button(type='submit') Send
